@@ -28,12 +28,11 @@ function Contact() {
 
   return (
     <div className="text-4xl text-white font-signika p-10 py-20  mx-auto" id="contact">
-      <div className="mb-10 text-4xl text-center">
-        <span className="border-b-4 border-[#01d193] text-white">Contact</span>
-      </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 w-full mx-auto">
-        <div className="text-start lg:w-96 md:w-96 sm:w-10 mx-auto">
-          <p className="mb-2 text-2xl text-start">Contact With Me</p>
+        <div className="text-start w-full mx-auto">
+          <div className="mb-5 text-4xl lg:text-start text-center">
+            <span className="border-b-4 border-[#01d193] text-white">Contact</span>
+          </div>
           <p className="mb-4 text-sm text-gray-400 text-start">
             Let’s make something new, different, important and make thing inovation that is useful for many people. You can contact me via the following form or social media, lets contact with me
           </p>
@@ -50,9 +49,9 @@ function Contact() {
             <p className="ml-8 md:text-md text-sm text-gray-400">(+62) 812 336 231 06</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:mx-auto">
+        <div className="grid grid-cols-1 lg:mx-auto w-full lg:pl-10">
           <form>
-            <div className="mb-6 lg:w-96 md:w-96 sm:w-10 mx-auto">
+            <div className="mb-6 w-full lg:mx-auto md:mx-auto mx-start">
               <input
                 type="text"
                 id="name"
@@ -62,7 +61,7 @@ function Contact() {
                 onChange={(e) => setNama(e.target.value)}
               />
             </div>
-            <div className="mb-6 lg:w-96 md:w-96 sm:w-10 mx-auto">
+            <div className="mb-6 w-full lg:mx-auto md:mx-auto mx-start">
               <input
                 type="email"
                 id="email"
@@ -72,20 +71,20 @@ function Contact() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="flex items-start mb-6 lg:w-96 md:w-96 sm:w-10 mx-auto">
+            <div className="flex items-start mb-6  w-full lg:mx-auto md:mx-auto mx-start">
               <textarea
                 id="message"
                 rows="4"
-                className="block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 w-full mx-auto"
+                className="block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 w-full lg:mx-auto md:mx-auto mx-start"
                 placeholder="Leave a message for me"
                 onChange={(e) => setPesan(e.target.value)}
               ></textarea>
             </div>
-            <div className="flex items-start mb-6 lg:w-96 md:w-96 sm:w-10 mx-auto">
+            <div className="flex items-start mb-6 w-full mx-auto">
               <button
                 onClick={formhandle}
                 type="submit"
-                className="inline-flex items-center py-2 px-4 text-sm font-medium text-center hover:text-white text-[#01d193] bg-[#171f38] rounded-lg border border-[#01d193] hover:bg-[#01d193] focus:ring-4 focus:outline-none focus:ring-gray-200"
+                className="inline-flex items-center py-2 px-4 text-sm font-medium text-center hover:text-white text-[#01d193] bg-[#171f38] rounded-lg border border-[#01d193] hover:bg-[#01d193] focus:ring-4 focus:outline-none focus:ring-gray-200 mx-start"
               >
                 Submit
               </button>

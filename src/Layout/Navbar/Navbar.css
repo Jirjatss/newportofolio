@@ -17,6 +17,9 @@
 .navbar a:hover {
   color: #01d193 !important;
 }
+.navbar a::after {
+  color: #01d193 !important;
+}
 .actives {
   content: "";
   width: 100%;

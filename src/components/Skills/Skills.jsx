@@ -8,19 +8,7 @@ import js from "../../assets/js.png";
 function Skills() {
   return (
     <div className="text-white font-signika p-10 py-20 mx-auto" id="skills">
-      <div className="mb-10 text-4xl text-center">
-        <span className="border-b-4 border-[#01d193] text-white">Skills</span>
-      </div>
       <div className="grid lg:grid-cols-2 md:grid-cols-1 w-full sm:grid-cols-1 sm:mx-auto">
-        <div className="w-full lg:w-96 mx-auto">
-          <p className="mb-2 text-2xl text-start lg:mt-8 lg:ml-2">My Skills</p>
-          <p className="mb-4 text-md lg:text-start sm:active lg:ml-2">Eager to learn with a desire to apply skills on the interactive team</p>
-          <div className="bar html" data-skill="HTML"></div>
-          <div className="bar back css" data-skill="CSS"></div>
-          <div className="bar back1 javascript" data-skill="Javascript"></div>
-          <div className="bar front1 react" data-skill="React JS"></div>
-          <div className="bar front vue" data-skill="Vue JS"></div>
-        </div>
         <div className="w-full text-center">
           <div className="row1-container">
             <div className="box box-down cyan">
@@ -44,6 +32,17 @@ function Skills() {
               <img src={vue} alt="" className="imgskills mx-auto" />
             </div>
           </div>
+        </div>
+        <div className="w-full lg:w-96 mx-auto">
+          <div className="mb-10 text-4xl text-center">
+            <span className="border-b-4 border-[#01d193] text-white">Skills</span>
+          </div>
+          <p className="mb-4 text-md lg:text-start sm:active lg:ml-2">Eager to learn with a desire to apply skills on the interactive team</p>
+          <div className="bar html" data-skill="HTML"></div>
+          <div className="bar back css" data-skill="CSS"></div>
+          <div className="bar back1 javascript" data-skill="Javascript"></div>
+          <div className="bar front1 react" data-skill="React JS"></div>
+          <div className="bar front vue" data-skill="Vue JS"></div>
         </div>
       </div>
     </div>

@@ -34,20 +34,20 @@ function Contact() {
       <div className="grid lg:grid-cols-2 grid-cols-1 w-full mx-auto">
         <div className="text-start lg:w-96 md:w-96 sm:w-10 mx-auto">
           <p className="mb-2 text-2xl text-start">Contact With Me</p>
-          <p className="mb-4 md:text-base text-base text-start">
+          <p className="mb-4 text-gray-400 text-start">
             Let’s make something new, different, important and make thing inovation that is useful for many people. You can contact me via the following form or social media, lets contact with me
           </p>
           <div className="flex mb-2">
             <House size={25} />
-            <p className="ml-8 md:text-md text-sm w-full">West Sumbawa - West Nusa Tenggara, 84456</p>
+            <p className="ml-8 md:text-md text-sm w-full text-gray-400">West Sumbawa - West Nusa Tenggara, 84456</p>
           </div>
           <div className="flex mb-2">
             <Envelope size={25} />
-            <p className="ml-8 md:text-md text-sm w-full">sajadhijir@gmail.com</p>
+            <p className="ml-8 md:text-md text-sm w-full text-gray-400">sajadhijir@gmail.com</p>
           </div>
           <div className="flex mb-8">
             <Telephone size={25} />
-            <p className="ml-8 md:text-md text-sm">(+62) 812 336 231 06</p>
+            <p className="ml-8 md:text-md text-sm text-gray-400">(+62) 812 336 231 06</p>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:mx-auto">

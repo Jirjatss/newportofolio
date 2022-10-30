@@ -34,7 +34,7 @@ function Contact() {
       <div className="grid lg:grid-cols-2 grid-cols-1 w-full mx-auto">
         <div className="text-start lg:w-96 md:w-96 sm:w-10 mx-auto">
           <p className="mb-2 text-2xl text-start">Contact With Me</p>
-          <p className="mb-4 text-gray-400 text-start">
+          <p className="mb-4 text-sm text-gray-400 text-start">
             Let’s make something new, different, important and make thing inovation that is useful for many people. You can contact me via the following form or social media, lets contact with me
           </p>
           <div className="flex mb-2">

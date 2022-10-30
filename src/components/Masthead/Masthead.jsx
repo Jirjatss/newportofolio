@@ -23,7 +23,11 @@ function Masthead() {
               </a>
             </div>
 
-            <HashLink to="/#project" className="btn btn-primary mt-6" smooth>
+            <HashLink
+              to="/#project"
+              className="inline-flex items-center py-3 px-6 text-sm font-medium text-center hover:text-white text-[#01d193] bg-[#171f38] rounded-lg border border-[#01d193] hover:bg-[#01d193] focus:ring-4 focus:outline-none focus:ring-gray-200 mt-6"
+              smooth
+            >
               Project
             </HashLink>
           </div>

@@ -20,7 +20,6 @@ function Home() {
       <Skills />
       <Project />
       <Testimoni />
-
       <Contact />
       <Footer />
     </>

@@ -33,7 +33,7 @@ function About() {
   };
 
   return (
-    <div className="text-4xl text-white font-signika p-10 pt-10 text-center mx-auto" id="about">
+    <div className="text-4xl text-white font-signika p-10 pt-20 text-center mx-auto" id="about">
       <div className="grid lg:grid-cols-2 grid-cols-1 mx-auto">
         <div className="relative">
           <div className="mb-8">

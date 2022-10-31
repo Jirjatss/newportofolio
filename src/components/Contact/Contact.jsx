@@ -49,7 +49,7 @@ function Contact() {
             <p className="ml-8 md:text-md text-sm text-gray-400">(+62) 812 336 231 06</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:mx-auto w-full lg:pl-10">
+        <div className="grid grid-cols-1 lg:mx-auto w-full lg:pl-10 lg:mt-10 md:mt-10">
           <form>
             <div className="mb-6 w-full lg:mx-auto md:mx-auto mx-start">
               <input

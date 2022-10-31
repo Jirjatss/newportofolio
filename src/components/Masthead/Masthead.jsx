@@ -6,7 +6,7 @@ function Masthead() {
   return (
     <>
       <div className="hero min-h-screen bg-fixed" style={{ backgroundImage: `url("https://source.unsplash.com/1000x600?programming")` }} id="home">
-        <div className="hero-overlay bg-opacity-80"></div>
+        <div className="hero-overlay bg-black/80 backdrop-blur-sm"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md font-signika">
             <p className="mb-5 text-4xl text-white">I'm Muhammad Hijir Sajad</p>

@@ -7,7 +7,7 @@ import CardProject from "../Card/CardProject";
 
 function Project() {
   return (
-    <div className="text-4xl text-black font-signika p-10 py-20  mx-auto" id="project">
+    <div className="text-4xl text-black font-signika p-10 pt-20  mx-auto" id="project">
       <div className="mb-10 text-4xl text-center">
         <span className="border-b-4 border-[#01d193] text-white">Project</span>
       </div>
@@ -19,7 +19,7 @@ function Project() {
           gambar={movie}
           nama={"Jirjatss Movie"}
           ket={"website to see all kinds of movies in the world, the latest and the old ones"}
-          url={"hhttps://keen-travesseiro-fdac30.netlify.app/"}
+          url={"https://keen-travesseiro-fdac30.netlify.app/"}
           tag={"Web"}
           tag2={"Application"}
           tag3={"Movie"}

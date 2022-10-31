@@ -5,7 +5,7 @@ import { useState } from "react";
 function CardProject(props) {
   return (
     <>
-      <div className="block max-w-full bg-[#171f38] rounded-lg  sm:mx-auto md:mx-2 lg:mx-2 mb-2 text-white">
+      <div className="block max-w-full bg-[#171f38] rounded-lg  sm:mx-auto md:mx-2 lg:mx-2 mb-2 text-white group/item ">
         <div className="card-body">
           <p className="card-title text-left">{props.nama}</p>
           <p className="text-sm  text-gray-400">{props.ket}</p>
@@ -24,7 +24,7 @@ function CardProject(props) {
               href={props.url}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center py-2 px-8 text-sm font-medium text-center hover:text-white text-[#01d193] bg-[#171f38] rounded-lg border border-[#01d193] hover:bg-[#01d193] focus:ring-4 focus:outline-none focus:ring-gray-200"
+              className="inline-flex items-center py-2 px-8 text-sm font-medium text-center hover:text-white text-[#01d193] bg-[#171f38] rounded-lg border border-[#01d193] hover:bg-[#01d193] focus:ring-4 focus:outline-none focus:ring-gray-200 "
             >
               Visit
             </a>

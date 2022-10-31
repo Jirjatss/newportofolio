@@ -35,7 +35,7 @@
 }
 .bar::before {
   content: attr(data-skill);
-  background-color: #f3b0ff;
+  background-color: #8c7990;
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
@@ -46,16 +46,16 @@
 }
 
 .bar.front::before {
-  background-color: #ffcc33;
+  background-color: #a47c07;
 }
 .bar.back::before {
-  background-color: #a6cfe3;
+  background-color: #405e6d;
 }
 .bar.front1::before {
-  background-color: #fad6a5;
+  background-color: #aa9b88;
 }
 .bar.back1::before {
-  background-color: #ff7d7d;
+  background-color: #946767;
 }
 
 .bar.html::before {
@@ -181,4 +181,43 @@
 
 .act {
   display: none;
+}
+
+.pic-ctn {
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.sajad > div {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+div:nth-child(2) {
+  animation-delay: 4s;
 }

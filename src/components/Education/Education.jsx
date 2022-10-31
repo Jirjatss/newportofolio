@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 
 function Education() {
   return (
-    <div className="text-4xl text-white font-signika p-10 py-20 text-center mx-auto" id="education">
+    <div className="text-4xl text-white font-signika p-10 pt-20 text-center mx-auto" id="education">
       <div className="mb-8">
         <span className="border-b-4 border-[#01d193]">Education</span>
       </div>

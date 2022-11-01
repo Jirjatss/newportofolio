@@ -1,5 +1,6 @@
 import React from "react";
 import gina from "../../assets/gina.PNG";
+import "./Testimoni.css";
 
 import CardTestimoni from "../Card/CardTestimoni";
 

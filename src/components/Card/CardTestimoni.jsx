@@ -35,7 +35,7 @@ function CardTestimoni({ slides }) {
 
   return (
     <>
-      <div className="w-full h-96 mx-auto lg:mt-24 md:mt-24 px-10 items-center}">
+      <div className={`w-full h-96 mx-auto lg:mt-24 md:mt-24 px-10 items-center`}>
         <img src={slides[currentIndex].gambar} alt={slides[currentIndex].nama} className={`w-24 h-24 rounded-full shadow-lg mx-auto mb-4 ${slides[currentIndex].anim}`} />
         <div className="flex">
           <button className="rounded mr-10 -mt-10 hover:text-[#01d193] flex" onClick={prev}>

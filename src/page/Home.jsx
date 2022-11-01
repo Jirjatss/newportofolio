@@ -10,6 +10,7 @@ import Project from "../components/Project/Project";
 import Contact from "../components/Contact/Contact";
 import Testimoni from "../components/Testimoni/Testimoni";
 import { HashLink } from "react-router-hash-link";
+import Achievement from "../components/Timeline/Achievement";
 
 function Home() {
   const [scroll, setScroll] = useState(false);
@@ -33,6 +34,7 @@ function Home() {
       <Education />
       <Skills />
       <Project />
+      <Achievement />
       <Testimoni />
       <Contact />
       <Footer />

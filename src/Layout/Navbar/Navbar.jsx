@@ -56,6 +56,11 @@ function Navbar() {
                   Skills
                 </HashLink>
               </li>
+              {/* <li>
+                <HashLink to="/#achievement" className="block  pr-4 pl-3 text-gray-700 rounded  md:border-0 0 md:p-0" smooth onClick={() => setOpen(!open)}>
+                  Achievement
+                </HashLink>
+              </li> */}
               <li>
                 <HashLink to="/#contact" className="block  pr-4 pl-3 text-gray-700 rounded  md:border-0 0 md:p-0" smooth onClick={() => setOpen(!open)}>
                   Contact

@@ -5,7 +5,7 @@ function Card(props) {
     <>
       <div className="block max-w-full bg-[#171f38] rounded-lg  sm:mx-auto md:mx-2 lg:mx-2 mb-2 text-white">
         <figure>
-          <img src={props.gambar} alt={props.nama} className="h-40 mx-auto mt-4" />
+          <img src={props.gambar} alt={props.nama} className="h-20 mx-auto mt-4" />
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{props.nama}</h2>

@@ -85,7 +85,7 @@ function Project() {
               gambar={BMI}
               nama={"BMI Calculator"}
               ket={"Body Mass Index is a simple calculation using a person’s height and weight."}
-              url={"https://clinquant-moxie-74d72e.netlify.app/"}
+              url={"https://jirjatss-bmicalculator.netlify.app/"}
               tag={"Web"}
               tag2={"Application"}
               tag3={"Calculattor"}

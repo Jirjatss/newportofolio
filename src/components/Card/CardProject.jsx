@@ -7,15 +7,15 @@ function CardProject(props) {
     <>
       <div className="block max-w-full bg-[#171f38] rounded-lg  sm:mx-auto md:mx-2 lg:mx-2 mb-2 text-white group/item ">
         <div className="card-body">
-          <p className="card-title text-left">{props.nama}</p>
-          <p className="text-sm  text-gray-400">{props.ket}</p>
-          <div className="card-actions justify-start">
+          <p className="card-title mx-auto">{props.nama}</p>
+          <p className="text-sm  text-gray-400 text-center md:text-start mx-auto">{props.ket}</p>
+          <div className="card-actions justify-center xl:justify-start">
             <div className="badge badge-outline">{props.tag}</div>
             <div className="badge badge-outline">{props.tag2}</div>
             <div className="badge badge-outline">{props.tag3}</div>
           </div>
 
-          <figure className="pt-5">
+          <figure className="pt-5 mx-auto">
             <img src={props.gambar} alt={props.nama} className="rounded-xl h-40" />
           </figure>
 

@@ -4,7 +4,6 @@ import html from "../../assets/html.png";
 import react from "../../assets/react.png";
 import vue from "../../assets/vue.png";
 import js from "../../assets/js.png";
-import CardProject from "../Card/CardProject";
 
 function Skills() {
   return (

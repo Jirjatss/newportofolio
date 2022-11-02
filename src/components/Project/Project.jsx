@@ -52,7 +52,7 @@ function Project() {
       <div className="text-start px-2">
         <Slider {...settings}>
           <div>
-            <CardProject gambar={babycare} nama={"Baby Care"} ket={"Baby health website that helps mothers to take care of the baby"} url={"https://babycarelove.netlify.app/"} tag={"Web"} tag2={"Application"} tag3={"Healthy"} />
+            <CardProject gambar={babycare} nama={"Baby Care"} ket={"a website for mothers monitor and maintain baby's health optimally"} url={"https://babycarelove.netlify.app/"} tag={"Web"} tag2={"Application"} tag3={"Healthy"} />
           </div>
           <div>
             <CardProject

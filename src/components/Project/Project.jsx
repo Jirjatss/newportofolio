@@ -6,7 +6,7 @@ import movie from "../../assets/movie.PNG";
 import CardProject from "../Card/CardProject";
 import BMI from "../../assets/BMI.PNG";
 import todo from "../../assets/todo.PNG";
-import mini from "../../assets/miniapps.png";
+import mini from "../../assets/miniapps.PNG";
 import Slider from "react-slick";
 
 function SampleNextArrow(props) {

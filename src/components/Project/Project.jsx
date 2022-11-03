@@ -6,6 +6,7 @@ import movie from "../../assets/movie.PNG";
 import CardProject from "../Card/CardProject";
 import BMI from "../../assets/BMI.PNG";
 import todo from "../../assets/todo.PNG";
+import mini from "../../assets/miniapps.png";
 import Slider from "react-slick";
 
 function SampleNextArrow(props) {
@@ -78,6 +79,17 @@ function Project() {
               tag={"Web"}
               tag2={"Application"}
               tag3={"Movie"}
+            />
+          </div>
+          <div>
+            <CardProject
+              gambar={mini}
+              nama={"Mini Apps"}
+              ket={"a website that provides various services, for example BMI calculator and Convert rgb to hex"}
+              url={"https://jirjatss-miniapps.netlify.app/"}
+              tag={"Web"}
+              tag2={"Application"}
+              tag3={"Mini Apps"}
             />
           </div>
           <div>

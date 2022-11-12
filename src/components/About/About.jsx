@@ -1,5 +1,5 @@
 import React from "react";
-import Sajad from "../../assets/sajad.JPG";
+import { HashLink } from "react-router-hash-link";
 import sajad from "../../assets/about.png";
 
 function About() {
@@ -50,17 +50,18 @@ function About() {
             </p>
           </div>
           <div className="lg:-mt-48 md:-mt-48">
-            <button
-              onClick={cv}
+            <HashLink
+              smooth
+              to="/#contact"
               className="inline-flex me-2 items-center py-2 px-4 text-sm font-medium text-center hover:text-white text-[#01d193] bg-[#171f38] rounded-lg border border-[#01d193] hover:bg-[#01d193] focus:ring-4 focus:outline-none focus:ring-gray-200"
             >
-              Download CV
-            </button>
+              Hire Me
+            </HashLink>
             <button
-              onClick={Sertifikat}
-              className="inline-flex ml-2 items-center py-2 px-4 text-sm font-medium text-center hover:text-white text-[#01d193] bg-[#171f38] rounded-lg border border-[#01d193] hover:bg-[#01d193] focus:ring-4 focus:outline-none focus:ring-gray-200"
+              onClick={cv}
+              className="inline-flex  ml-2 items-center py-2 px-4 text-sm font-medium text-center hover:text-white text-[#01d193] bg-[#171f38] rounded-lg border border-[#01d193] hover:bg-[#01d193] focus:ring-4 focus:outline-none focus:ring-gray-200"
             >
-              Download Certificate
+              Download CV
             </button>
           </div>
         </div>

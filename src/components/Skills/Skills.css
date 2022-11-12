@@ -57,6 +57,12 @@
 .bar.back1::before {
   background-color: #946767;
 }
+.bar.bot::before {
+  background-color: #665a48;
+}
+.bar.tw::before {
+  background-color: #815b5b;
+}
 
 .bar.html::before {
   width: calc(95% - 10px);
@@ -70,8 +76,11 @@
 .bar.react::before {
   width: calc(85% - 10px);
 }
-.bar.vue::before {
+.bar.bootstrap::before {
   width: calc(80% - 10px);
+}
+.bar.tailwind::before {
+  width: calc(83% - 10px);
 }
 
 :root {
@@ -107,18 +116,18 @@
 
 .box {
   background-color: #171f38;
-  padding: 30px;
+  padding: 30px 20px;
   margin: 20px;
 }
 .box-down {
   background-color: #171f38;
-  padding: 30px 10px;
+  padding: 30px 20px;
   margin: 20px;
 }
 
 .imgskills {
   width: 100%;
-  height: 4rem !important;
+  /* height: 6rem !important; */
 }
 
 @media (max-width: 450px) {

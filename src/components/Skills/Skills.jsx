@@ -2,8 +2,8 @@ import React from "react";
 import "./Skills.css";
 import html from "../../assets/html.png";
 import react from "../../assets/react.png";
-import vue from "../../assets/vue.png";
 import js from "../../assets/js.png";
+import css from "../../assets/css.png";
 
 function Skills() {
   return (
@@ -13,7 +13,7 @@ function Skills() {
           <div className="w-full text-center">
             <div className="row1-container">
               <div className="box box-down cyan">
-                <h2 className="mb-3 -mt-3">HTML & CSS</h2>
+                <h2 className="mb-3 -mt-3">HTML</h2>
                 <img src={html} alt="" className="imgskills mx-auto" />
               </div>
 
@@ -29,8 +29,8 @@ function Skills() {
             </div>
             <div className="row2-container">
               <div className="box orange">
-                <h2 className="mb-3 -mt-3">Vue JS</h2>
-                <img src={vue} alt="" className="imgskills mx-auto" />
+                <h2 className="mb-3 -mt-3">CSS</h2>
+                <img src={css} alt="" className="imgskills mx-auto" />
               </div>
             </div>
           </div>
@@ -43,7 +43,8 @@ function Skills() {
             <div className="bar back css" data-skill="CSS"></div>
             <div className="bar back1 javascript" data-skill="Javascript"></div>
             <div className="bar front1 react" data-skill="React JS"></div>
-            <div className="bar front vue" data-skill="Vue JS"></div>
+            <div className="bar tw tailwind" data-skill="Tailwind"></div>
+            <div className="bar bot bootstrap" data-skill="Bootstrap"></div>
           </div>
         </div>
       </div>

@@ -1,28 +1,49 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Envelope, House, Telephone } from "react-bootstrap-icons";
 import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
+import { validEmail } from "./Regex";
 
 function Contact() {
+  const form = useRef();
   const [nama, setNama] = useState("");
   const [email, setEmail] = useState("");
   const [pesan, setPesan] = useState("");
 
-  const sendOnWhatsApp = () => {
-    let url = "https://api.whatsapp.com/send/?phone=6281233623106&text=" + "Nama : " + nama + "%0a" + "Email : " + email + "%0a" + "Message : " + pesan;
-    window.open(url, "_blank");
-  };
-
-  const formhandle = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
     if (nama === "" || email === "" || pesan === "") {
       Swal.fire({
         icon: "error",
         title: "Oops!",
         text: "Please input a valid form ",
       });
+      setEmail("");
+      setNama("");
+      setPesan("");
+    } else if (!validEmail.test(email)) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops!",
+        text: "Please input a valid Email ",
+      });
+      setEmail("");
     } else {
-      window.location.reload();
-      sendOnWhatsApp();
+      emailjs.sendForm("service_qiow697", "template_hytj71f", form.current, "Q6n3se8JBnmrPR9ST").then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+      Swal.fire({
+        icon: "success",
+        title: "Email sent!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
     }
   };
 
@@ -50,13 +71,15 @@ function Contact() {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:mx-auto w-full lg:pl-10 lg:mt-10 md:mt-10">
-          <form>
+          <form ref={form}>
             <div className="mb-6 w-full lg:mx-auto md:mx-auto mx-start">
               <input
+                value={nama}
                 type="text"
                 id="name"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  mx-auto"
                 placeholder="Your Name"
+                name="user_name"
                 required=""
                 onChange={(e) => setNama(e.target.value)}
               />
@@ -65,6 +88,8 @@ function Contact() {
               <input
                 type="email"
                 id="email"
+                name="user_email"
+                value={email}
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mx-auto"
                 placeholder="Your Email"
                 required=""
@@ -73,7 +98,9 @@ function Contact() {
             </div>
             <div className="flex items-start mb-6  w-full lg:mx-auto md:mx-auto mx-start">
               <textarea
+                value={pesan}
                 id="message"
+                name="message"
                 rows="4"
                 className="block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 w-full lg:mx-auto md:mx-auto mx-start"
                 placeholder="Leave a message for me"
@@ -82,7 +109,7 @@ function Contact() {
             </div>
             <div className="flex items-start mb-6 w-full mx-auto">
               <button
-                onClick={formhandle}
+                onClick={sendEmail}
                 type="submit"
                 className="inline-flex items-center py-2 px-4 text-sm font-medium text-center hover:text-white text-[#01d193] bg-[#171f38] rounded-lg border border-[#01d193] hover:bg-[#01d193] focus:ring-4 focus:outline-none focus:ring-gray-200 mx-start"
               >

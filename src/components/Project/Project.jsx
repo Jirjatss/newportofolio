@@ -68,8 +68,9 @@ function Project() {
             />
           </div>
           <div>
-            <CardProject gambar={port} nama={"Web Portofolio"} ket={"An online portfolio (may also be called a digital portfolio or e-portfolio)"} url={"https://hijirsajad.netlify.app"} tag={"Web"} tag2={"Application"} tag3={"Portfolio"} />
+            <CardProject gambar={todo} nama={"To Do List"} ket={"part of the planning in the form of a set of tasks that must be done."} url={"https://jirjatss-todo.netlify.app/"} tag={"Web"} tag2={"Application"} tag3={"To Do"} />
           </div>
+
           <div>
             <CardProject
               gambar={movie}
@@ -104,15 +105,7 @@ function Project() {
             />
           </div>
           <div>
-            <CardProject
-              gambar={todo}
-              nama={"To Do List"}
-              ket={"part of the planning in the form of a set of tasks that must be done."}
-              url={"https://reliable-lebkuchen-6853f3.netlify.app/"}
-              tag={"Web"}
-              tag2={"Application"}
-              tag3={"To Do"}
-            />
+            <CardProject gambar={port} nama={"Web Portofolio"} ket={"An online portfolio (may also be called a digital portfolio or e-portfolio)"} url={"https://hijirsajad.netlify.app"} tag={"Web"} tag2={"Application"} tag3={"Portfolio"} />
           </div>
         </Slider>
       </div>
